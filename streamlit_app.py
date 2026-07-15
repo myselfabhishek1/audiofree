@@ -158,8 +158,8 @@ def process_channel(channel, sr, params):
 
 # ----------------------------- Streamlit UI -----------------------------
 
-st.set_page_config(page_title="Audio Frequency & Time Glitch Effect")
-st.title("Audio Frequency & Time Glitch Effect")
+st.set_page_config(page_title="Make audio copyright free")
+st.title("Make audio copyright free")
 st.markdown(
     "Upload a **WAV** file, adjust the settings, and download the processed result.\n\n"
     "- **Frequency shift**: low/mid/high bands are pitch-shifted every 20 ms.\n"
