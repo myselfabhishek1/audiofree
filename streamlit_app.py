@@ -257,7 +257,7 @@ def verify_gumroad_license(product_id, license_key):
     if not license_key.strip():
         return False, "Please enter a license key."
     if product_id == "PASTE_YOUR_PRODUCT_ID_HERE":
-    return False, "App owner hasn't configured GUMROAD_PRODUCT_ID yet."
+        return False, "App owner hasn't configured GUMROAD_PRODUCT_ID yet."
     try:
         response = requests.post(
             "https://api.gumroad.com/v2/licenses/verify",
