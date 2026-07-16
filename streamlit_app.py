@@ -32,8 +32,8 @@ from scipy.signal import butter, sosfiltfilt, resample_poly
 # How to find it: on gumroad.com, edit your product -> "Content" tab ->
 # enable "Generate a unique license key per sale" -> the product_id is
 # shown right there next to that setting.
-GUMROAD_PRODUCT_ID = "PASTE_YOUR_PRODUCT_ID_HERE"
-GUMROAD_PRODUCT_LINK = "https://gumroad.com/l/YOUR_PRODUCT_LINK"
+GUMROAD_PRODUCT_ID = "XbtF201zjNR6qHclhbH-Gg=="
+GUMROAD_PRODUCT_LINK = "https://abhishekreal4.gumroad.com/l/jdcuo"
 # ---------------------------------------------------------------------
 
 # ----------------------------- EFFECT CONFIG -----------------------------
@@ -256,7 +256,7 @@ def load_audio_any_format(uploaded_file):
 def verify_gumroad_license(product_id, license_key):
     if not license_key.strip():
         return False, "Please enter a license key."
-    if product_id == "PASTE_YOUR_PRODUCT_ID_HERE":
+    if product_id == "XbtF201zjNR6qHclhbH-Gg==":
         return False, "App owner hasn't configured GUMROAD_PRODUCT_ID yet."
     try:
         response = requests.post(
