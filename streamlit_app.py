@@ -366,7 +366,7 @@ if uploaded_file is not None:
         progress_bar.progress(100, text="Done")
 
     if st.session_state.processed_bytes is not None:
-        st.audio(st.session_state.processed_bytes, format="audio/wav")
+        st.success("Processing complete! Unlock below to download your file.")
 
         st.divider()
         st.subheader("Unlock download")
